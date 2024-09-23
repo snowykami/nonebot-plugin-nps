@@ -15,15 +15,17 @@ async def fetch_online_plugins_from_all_sources(session: ClientSession) -> tuple
     """
     err = None
     plugins = []
-
     for source in sources:
         try:
             async with session.get(source.url) as resp:
                 data = await resp.json()
+                for plugin in data:
+                    plugin.source = source.name
                 plugins.extend(data)
         except Exception as e:
             err = e
             break
+
     return parse_obj_as(list[Plugin], plugins), err
 
 
@@ -42,6 +44,3 @@ async def fetch_local_plugins() -> [list[Plugin], Exception | None]:
     except Exception as e:
         err = e
     return parse_obj_as(list[Plugin], plugins), err
-
-
-
