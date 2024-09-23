@@ -7,7 +7,7 @@
 
 # nonebot-plugin-nps
 
-_✨ NoneBot2的插件商店插件 ✨_
+_✨ NoneBot2的插件商店插件 开发中 ✨_
 
 
 <a href="./LICENSE">
@@ -70,3 +70,16 @@ _✨ NoneBot2的插件商店插件 ✨_
 </details>
 
 ## 🎉 使用
+
+### 命令
+
+#### 插件管理
+- `nps search <[关键词, ...]>` 通过关键词搜索插件返回列表插件详情
+- `nps install [<插件名>, ...] [-i|--index <源>]` 安装插件，支持指定PyPi源
+- `nps uninstall <插件名>` 卸载插件
+
+#### 基础命令
+- `nps help` 查看帮助
+- `nps update` 更新本地商店索引
+- `nps upgrade [<插件名>, ...]/all` 更新指定/所有插件
+- `nps list` 列出所有已安装的插件
