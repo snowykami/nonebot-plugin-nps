@@ -76,14 +76,14 @@ _✨ NoneBot2的插件商店插件 开发中 ✨_
 #### 插件管理
 
 - `nps search <[关键词, ...]> [-o|--online]` 通过关键词从本地缓存搜索并返回插件详情，是否从在线商店搜索(更耗时)
-- `nps install [<插件名>, ...] [-i|--index <源>]` 安装插件，支持指定PyPi源
+- `nps install [<插件名>, ...] [-i|--index <源>]` 安装插件，--index 指定PyPi源
 - `nps uninstall <插件名>` 卸载插件
 
 #### 基础命令
 
 - `nps help` 查看帮助
 - `nps update` 更新本地商店索引(搜索不到新插件时使用)
-- `nps upgrade [<插件名>, ...]/all [-i|--index <源>] [-q|--query]` 升级指定/所有插件，-index 指定源，--query 仅查询需要更新的插件但不更新
+- `nps upgrade [<插件名>, ...]/all [-i|--index <源>] [-q|--query]` 升级指定/所有插件，--index 指定源，--query 仅查询需要更新的插件但不更新
 - `nps list` 列出所有已安装的插件
 
 #### 推广信息
