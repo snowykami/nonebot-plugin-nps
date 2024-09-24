@@ -83,5 +83,9 @@ _✨ NoneBot2的插件商店插件 开发中 ✨_
 
 - `nps help` 查看帮助
 - `nps update` 更新本地商店索引(搜索不到新插件时使用)
-- `nps upgrade [<插件名>, ...]/all [-i|--index <源>]` 升级指定/所有插件
+- `nps upgrade [<插件名>, ...]/all [-i|--index <源>] [-q|--query]` 升级指定/所有插件，-index 指定源，--query 仅查询需要更新的插件但不更新
 - `nps list` 列出所有已安装的插件
+
+#### 推广信息
+
+- `nps top` 本月新品
